@@ -31,8 +31,9 @@ const checkIfpalindrome = userInput =>{
 const getUserInput = () => {
     let userInput = input.value;
     if(!userInput){
-        checkIfpalindrome(userInput);
+        return;
     }
+    checkIfpalindrome(userInput);
 }
 
 // getUserInput() called when user click check button
