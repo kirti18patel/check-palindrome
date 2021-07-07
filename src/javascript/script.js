@@ -22,7 +22,9 @@ const checkIfpalindrome = userInput =>{
 
 const getUserInput = () => {
     let userInput = input.value;
-    checkIfpalindrome(userInput);
+    if(!userInput){
+        checkIfpalindrome(userInput);
+    }
 }
 
 check.addEventListener("click", getUserInput);
